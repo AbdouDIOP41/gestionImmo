@@ -1,0 +1,16 @@
+{
+    "google-login": {
+        "provider": "google",
+        "module": "passport-google-oauth2",
+        "strategy": "OAuth2Strategy",
+        "clientID": "521517205530-hgoteb32dgunp67ualaidim6n7e9peip.apps.googleusercontent.com",
+        "clientSecret": "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",
+        "callbackURL": "/api/auth/thirdparty/google/callback",
+        "authPath": "/api/auth/thirdparty/google",
+        "callbackPath": "/api/auth/thirdparty/google/callback",
+        "successRedirect": "/auth/account",
+        "failureRedirect": "/login",
+        "scope": ["email", "profile"],
+        "failureFlash": true
+    }
+}
